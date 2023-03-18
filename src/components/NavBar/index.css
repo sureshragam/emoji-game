@@ -1,0 +1,51 @@
+/* Write your code here. */
+nav {
+  background-color: #9796f0;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  width: 100%;
+}
+.nav-heading {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+nav img {
+  width: 50px;
+}
+nav ul {
+  padding-left: 0px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+}
+
+/* for extra small devices */
+@media screen and (max-width: 576px) {
+  nav {
+    height: 50px;
+    padding: 10px 20px;
+  }
+  nav img {
+    width: 30px;
+  }
+  .nav-heading > h1 {
+    font-size: 20px;
+  }
+  nav ul {
+    margin-right: 0px;
+  }
+  nav ul li p {
+    font-size: 15px;
+  }
+}

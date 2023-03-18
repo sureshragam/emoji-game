@@ -1,0 +1,87 @@
+/* Write your code here. */
+.emoji-game {
+  background-image: linear-gradient(to bottom, #9796f0, #fbc7d4);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+.emoji-cards {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+}
+.game-over-card {
+  width: 60%;
+  height: 50%;
+  margin-top: 150px;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0.5px 0px 10px 0px white;
+}
+.game-over-card > .col-1 {
+  flex-basis: 49%;
+}
+.game-over-card > .col-2 {
+  flex-basis: 49%;
+  height: 100%;
+}
+.col-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.col-1 > h1 {
+  font-size: 50px;
+  color: white;
+}
+.col-1 > p {
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: white;
+}
+.col-1 > .score {
+  color: #6a59ff;
+  font-weight: bold;
+}
+.col-1 > button {
+  background-color: #ffce27;
+  margin-top: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  border-style: none;
+}
+.col-2 img {
+  width: 80%;
+  height: 99%;
+}
+
+/* for extra small devices */
+@media screen and (max-width: 576px) {
+  .emoji-cards {
+    width: 80%;
+  }
+  .game-over-card {
+    width: 80%;
+  }
+  .col-1 > h1 {
+    font-size: 30px;
+  }
+  .col-1 > p {
+    font-size: 20px;
+  }
+  .col-1 > .score {
+    font-size: 25px;
+  }
+}
